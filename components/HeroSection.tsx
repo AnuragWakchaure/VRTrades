@@ -48,6 +48,7 @@ export default function HeroSection() {
               width={1774}
               height={887}
               priority
+              sizes="(max-width: 900px) 100vw, 50vw"
               className="collection-img"
             />
           </div>
