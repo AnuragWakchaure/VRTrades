@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { motion, type Variants } from 'motion/react';
 
 interface CategoryItem {
   id: string;
@@ -56,6 +57,30 @@ const CATEGORIES: CategoryItem[] = [
   },
 ];
 
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 22, scale: 0.96 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      ease: [0.16, 1, 0.3, 1],
+    },
+  },
+};
+
 interface CategoryGridProps {
   onSelectCategory: (categoryTitle: string) => void;
 }
@@ -63,11 +88,20 @@ interface CategoryGridProps {
 export default function CategoryGrid({ onSelectCategory }: CategoryGridProps) {
   return (
     <section className="categories-section" aria-label="Product Categories">
-      <div className="categories-container">
+      <motion.div
+        className="categories-container"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.15 }}
+      >
         {CATEGORIES.map((cat) => (
-          <div
+          <motion.div
             key={cat.id}
             className="category-card"
+            variants={cardVariants}
+            whileHover={{ y: -4, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             tabIndex={0}
             role="button"
             aria-label={cat.title}
@@ -79,7 +113,11 @@ export default function CategoryGrid({ onSelectCategory }: CategoryGridProps) {
               }
             }}
           >
-            <div className="category-icon-wrapper">
+            <motion.div
+              className="category-icon-wrapper"
+              whileHover={{ scale: 1.12, rotate: [-1, 2, 0] }}
+              transition={{ duration: 0.3 }}
+            >
               <Image
                 src={cat.icon}
                 alt={`${cat.title} Icon`}
@@ -87,15 +125,15 @@ export default function CategoryGrid({ onSelectCategory }: CategoryGridProps) {
                 height={52}
                 className="category-png-icon"
               />
-            </div>
+            </motion.div>
             <span className="category-name">
               {cat.nameLine1}
               <br />
               {cat.nameLine2}
             </span>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

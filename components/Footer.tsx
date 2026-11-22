@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'motion/react';
 
 interface FooterProps {
   onOpenEnquiry: () => void;
@@ -8,27 +9,48 @@ interface FooterProps {
 
 export default function Footer({ onOpenEnquiry }: FooterProps) {
   return (
-    <footer className="site-footer" role="contentinfo">
+    <motion.footer
+      className="site-footer"
+      role="contentinfo"
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+    >
       {/* ==========================================
           FOOTER CONTENT
       =========================================== */}
       <div className="footer-content-wrap">
         <div className="footer-inner">
           {/* BUSINESS ENQUIRY BUTTON */}
-          <button
+          <motion.button
             type="button"
             className="enquiry-button"
             onClick={onOpenEnquiry}
             aria-haspopup="dialog"
+            whileHover={{ scale: 1.03, x: 2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ duration: 0.2 }}
           >
             <span>For bulk and business enquiries</span>
-            <span className="arrow" aria-hidden="true">→</span>
-          </button>
+            <motion.span
+              className="arrow"
+              aria-hidden="true"
+              animate={{ x: [0, 4, 0] }}
+              transition={{ repeat: Infinity, duration: 1.6, ease: 'easeInOut' }}
+            >
+              →
+            </motion.span>
+          </motion.button>
 
           {/* CONTACT DETAILS */}
           <div className="footer-contact-group">
             {/* EMAIL */}
-            <div className="footer-contact-item">
+            <motion.div
+              className="footer-contact-item"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
+            >
               <svg
                 className="footer-icon"
                 viewBox="0 0 24 24"
@@ -45,12 +67,16 @@ export default function Footer({ onOpenEnquiry }: FooterProps) {
               <a href="mailto:vrhealthtrade@gmail.com" aria-label="Send email to vrhealthtrade@gmail.com">
                 vrhealthtrade@gmail.com
               </a>
-            </div>
+            </motion.div>
 
             <div className="footer-divider-vert" aria-hidden="true" />
 
             {/* PHONE */}
-            <div className="footer-contact-item">
+            <motion.div
+              className="footer-contact-item"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
+            >
               <svg
                 className="footer-icon"
                 viewBox="0 0 24 24"
@@ -68,12 +94,16 @@ export default function Footer({ onOpenEnquiry }: FooterProps) {
                 &nbsp;|&nbsp;
                 <a href="tel:+917385228848" aria-label="Call +91 7385228848">+91 7385228848</a>
               </span>
-            </div>
+            </motion.div>
 
             <div className="footer-divider-vert" aria-hidden="true" />
 
             {/* LOCATION */}
-            <div className="footer-contact-item">
+            <motion.div
+              className="footer-contact-item"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.2 }}
+            >
               <svg
                 className="footer-icon"
                 viewBox="0 0 24 24"
@@ -88,10 +118,10 @@ export default function Footer({ onOpenEnquiry }: FooterProps) {
                 <circle cx="12" cy="10" r="3" />
               </svg>
               <span>Pune, Maharashtra, India</span>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
