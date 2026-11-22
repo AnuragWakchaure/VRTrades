@@ -6,7 +6,12 @@ export const metadata: Metadata = {
   description:
     'Healthcare Uniforms & Textiles, Made for Every Care Environment. Hospital uniforms, medical scrubs, OT linen, hospital bedding, staff uniforms and healthcare essentials.',
   icons: {
-    icon: '/icons/rocket-clean.webp',
+    icon: [
+      { url: '/logo.png', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    shortcut: '/logo.png',
+    apple: '/logo.png',
   },
 };
 
