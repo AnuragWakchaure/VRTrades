@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Vinduraj Health Trade - Healthcare Uniforms & Textiles, Made for Every Care Environment. Medical scrubs, hospital bedding, OT linen, nurse uniforms, staff uniforms, and healthcare essentials. Coming Soon.">
+  <meta name="theme-color" content="#d3151e">
+  <title>Vinduraj Health Trade | Healthcare Uniforms & Textiles | Coming Soon</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="public/icons/favicon.svg">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    
+    <!-- =======================================================================
+         ANIMATED RED LINES & DYNAMIC BACKGROUND SWOOSHES
+         ======================================================================= -->
+    <div class="swoosh-canvas-container" aria-hidden="true">
+
+      <!-- =====================================================
+          DESKTOP: LARGE SWEEPING CRIMSON RIBBON
+          ===================================================== -->
+      <svg
+        class="swoosh-svg swoosh-desktop"
+        viewBox="0 0 1920 1080"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <!-- Original Vinduraj Crimson Gradient -->
+          <!-- Crimson Gradient - Exact Mobile Style Stops & Opacity -->
+          <linearGradient
+            id="desktopVindurajRibbon"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
+            <stop offset="0%" stop-color="#FF7A7A" stop-opacity="0.18" />
+            <stop offset="48%" stop-color="#EF2A2A" stop-opacity="0.88" />
+            <stop offset="100%" stop-color="#D40000" stop-opacity="0.95" />
+          </linearGradient>
+
+          <!-- Soft Pink Ambient Aura Gradient - Exact Mobile Style -->
+          <linearGradient
+            id="desktopVindurajSoft"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
+            <stop offset="0%" stop-color="#FFD1D1" stop-opacity="0.15" />
+            <stop offset="100%" stop-color="#F25A5A" stop-opacity="0.45" />
+          </linearGradient>
+
+          <!-- Moving Light Reflection Pulse - Exact Mobile Style -->
+          <linearGradient
+            id="desktopVindurajPulse"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%"
+          >
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+            <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.75" />
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+
+        <g id="desktopMainRibbon" class="desktop-ribbon-group">
+          <!-- Outer Soft Pink Wave - Matching Mobile Layer 1 -->
+          <path
+            d="
+              M 560 560
+              C 850 280, 1140 40, 1540 105
+              C 1680 132, 1820 180, 1920 215
+              L 1920 325
+              C 1820 285, 1680 235, 1540 210
+              C 1140 145, 850 385, 560 610
+              Z
+            "
+            fill="url(#desktopVindurajSoft)"
+            opacity="0.85"
+          />
+
+          <!-- Main Sweeping Crimson Ribbon - Matching Mobile Layer 2 -->
+          <path
+            d="
+              M 580 580
+              C 860 310, 1150 70, 1540 135
+              C 1680 162, 1820 210, 1920 248
+              L 1920 295
+              C 1820 258, 1680 210, 1540 185
+              C 1150 120, 860 360, 580 595
+              Z
+            "
+            fill="url(#desktopVindurajRibbon)"
+          />
+
+          <!-- Soft Inner Highlight Stroke - Matching Mobile Layer 3 -->
+          <path
+            d="
+              M 580 580
+              C 860 310, 1150 70, 1540 135
+              C 1680 162, 1820 210, 1920 248
+            "
+            fill="none"
+            stroke="url(#desktopVindurajSoft)"
+            stroke-width="4"
+            stroke-linecap="round"
+            opacity="0.7"
+          />
+
+          <!-- Primary Traveling Light Beam - Matching Mobile Layer 4 -->
+          <path
+            d="
+              M 580 580
+              C 860 310, 1150 70, 1540 135
+              C 1680 162, 1820 210, 1920 248
+            "
+            fill="none"
+            stroke="url(#desktopVindurajPulse)"
+            stroke-width="4.5"
+            stroke-linecap="round"
+            class="swoosh-pulse-path"
+          />
+
+          <!-- Secondary Echo Swoosh - Matching Mobile Layer 5 -->
+          <path
+            d="
+              M 680 620
+              C 960 410, 1250 170, 1640 235
+              C 1760 258, 1850 290, 1920 315
+            "
+            fill="none"
+            stroke="url(#desktopVindurajRibbon)"
+            stroke-width="4"
+            opacity="0.55"
+            stroke-linecap="round"
+          />
+
+          <!-- Secondary Traveling Light Pulse - Matching Mobile Layer 6 -->
+          <path
+            d="
+              M 680 620
+              C 960 410, 1250 170, 1640 235
+              C 1760 258, 1850 290, 1920 315
+            "
+            fill="none"
+            stroke="url(#desktopVindurajPulse)"
+            stroke-width="4"
+            stroke-linecap="round"
+            class="swoosh-pulse-path-delayed"
+          />
+        </g>
+      </svg>
+
+      <!-- =====================================================
+          MOBILE: ORIGINAL VINDURAJ TOP-RIGHT CURVED WAVE
+          ===================================================== -->
+      <svg
+        viewBox="0 0 360 220"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="swoosh-svg swoosh-mobile"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <!-- Exact original mobile wave gradient -->
+          <linearGradient
+            id="mobileTopWaveGrad"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
+            <stop offset="0%" stop-color="#FF7A7A" stop-opacity="0.18" />
+            <stop offset="48%" stop-color="#EF2A2A" stop-opacity="0.88" />
+            <stop offset="100%" stop-color="#D40000" stop-opacity="0.95" />
+          </linearGradient>
+
+          <!-- Original soft pink gradient -->
+          <linearGradient
+            id="mobileTopWaveSoft"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
+            <stop offset="0%" stop-color="#FFD1D1" stop-opacity="0.15" />
+            <stop offset="100%" stop-color="#F25A5A" stop-opacity="0.45" />
+          </linearGradient>
+
+          <!-- Subtle reflection -->
+          <linearGradient
+            id="mobileTopWavePulse"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%"
+          >
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+            <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.55" />
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+
+        <g class="mobile-top-ribbon">
+          <!-- Outer soft pink wave -->
+          <path
+            d="M40 0 C155 10 265 65 360 170 V0 H40 Z"
+            fill="url(#mobileTopWaveSoft)"
+          />
+
+          <!-- Main crimson ribbon -->
+          <path
+            d="M95 0 C205 18 292 70 360 142 V72 C295 28 220 4 140 0 H95 Z"
+            fill="url(#mobileTopWaveGrad)"
+          />
+
+          <!-- Subtle animated highlight -->
+          <path
+            d="M95 0 C205 18 292 70 360 142"
+            fill="none"
+            stroke="url(#mobileTopWavePulse)"
+            stroke-width="3"
+            class="swoosh-pulse-path"
+          />
+        </g>
+      </svg>
+
+    </div>
+
+    <!-- =======================================================================
+         SITE HEADER (Transparent Brand Logo)
+         ======================================================================= -->
+    <header class="site-header" role="banner">
+      <a href="/" class="brand-container" aria-label="Vinduraj Health Trade Home">
+        <img src="public/images/logo-transparent.webp" 
+             alt="Vinduraj Health Trade Logo" 
+             class="brand-logo-img" 
+             width="168" 
+             height="82">
+      </a>
+    </header>
+
+    <!-- =======================================================================
+         HERO SECTION (Headline, Pitch, Badges & Collection Visual)
+         ======================================================================= -->
+    <main class="hero-section" id="main-content">
+      <div class="hero-grid">
+        
+        <!-- Left: Headline & Messaging -->
+        <div class="hero-left">
+          <div class="hero-accent-pill" aria-hidden="true"></div>
+          
+          <h1 class="hero-title">
+            <span class="title-sub">Our Website Is</span>
+            <span class="title-main">
+              Coming Soon
+              <svg class="title-swoosh-mobile" viewBox="0 0 240 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M 4 4 C 70 14, 170 14, 236 4 C 170 10, 70 10, 4 4 Z" fill="#d3151e" />
+              </svg>
+            </span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            Healthcare Uniforms & Textiles, Made for Every Care Environment.
+          </h2>
+
+          <p class="hero-description">
+            Explore our range of hospital uniforms, medical scrubs, OT linen, hospital bedding, staff uniforms and healthcare essentials.
+          </p>
+
+          <!-- Desktop Badge ("Launching Soon //") -->
+          <div class="launching-badge-desktop" role="status">
+            <span class="badge-text">Launching Soon</span>
+            <div class="badge-slashes" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Uniforms & Linens Collection Visual -->
+        <div class="hero-right">
+          <div class="collection-wrapper">
+            <!-- Mobile Animated Red Ribbon Traveling Behind Collection -->
+            <div class="collection-ribbon-backdrop" aria-hidden="true">
+              <svg
+                viewBox="0 0 540 280"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="collection-ribbon-svg"
+                preserveAspectRatio="none"
+              >
+                <defs>
+                  <!-- Main crimson gradient -->
+                  <linearGradient
+                    id="mobileCollWaveGrad"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#FF7A7A" stop-opacity="0.18" />
+                    <stop offset="48%" stop-color="#EF2A2A" stop-opacity="0.88" />
+                    <stop offset="100%" stop-color="#D40000" stop-opacity="0.95" />
+                  </linearGradient>
+
+                  <!-- Soft pink ambient gradient -->
+                  <linearGradient
+                    id="mobileCollWaveSoft"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#FFD1D1" stop-opacity="0.15" />
+                    <stop offset="100%" stop-color="#F25A5A" stop-opacity="0.45" />
+                  </linearGradient>
+
+                  <!-- Flowing light reflection beam -->
+                  <linearGradient
+                    id="mobileCollWavePulse"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+                    <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.75" />
+                    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+
+                <g class="mobile-collection-ribbon-group">
+                  <!-- Outer soft pink wave -->
+                  <path
+                    d="
+                      M -30 195
+                      C 80 145, 170 85, 275 95
+                      C 375 105, 455 145, 570 100
+                      L 570 140
+                      C 455 185, 375 145, 275 135
+                      C 170 125, 80 185, -30 235
+                      Z
+                    "
+                    fill="url(#mobileCollWaveSoft)"
+                    opacity="0.85"
+                  />
+
+                  <!-- Main crimson ribbon -->
+                  <path
+                    d="
+                      M -30 180
+                      C 85 130, 175 72, 280 82
+                      C 375 92, 455 132, 570 90
+                      L 570 106
+                      C 455 148, 375 108, 280 98
+                      C 175 88, 85 146, -30 196
+                      Z
+                    "
+                    fill="url(#mobileCollWaveGrad)"
+                  />
+
+                  <!-- Soft inner highlight -->
+                  <path
+                    d="M -30 180 C 85 130, 175 72, 280 82 C 375 92, 455 132, 570 90"
+                    fill="none"
+                    stroke="url(#mobileCollWaveSoft)"
+                    stroke-width="3.5"
+                    opacity="0.7"
+                  />
+
+                  <!-- Primary animated traveling light beam -->
+                  <path
+                    d="M -30 180 C 85 130, 175 72, 280 82 C 375 92, 455 132, 570 90"
+                    fill="none"
+                    stroke="url(#mobileCollWavePulse)"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    class="swoosh-pulse-path"
+                  />
+
+                  <!-- Secondary lower echo swoosh -->
+                  <path
+                    d="
+                      M 40 230
+                      C 140 180, 240 140, 350 155
+                      C 420 165, 490 195, 560 175
+                    "
+                    fill="none"
+                    stroke="url(#mobileCollWaveGrad)"
+                    stroke-width="3.5"
+                    opacity="0.55"
+                    stroke-linecap="round"
+                  />
+
+                  <!-- Secondary traveling light pulse -->
+                  <path
+                    d="
+                      M 40 230
+                      C 140 180, 240 140, 350 155
+                      C 420 165, 490 195, 560 175
+                    "
+                    fill="none"
+                    stroke="url(#mobileCollWavePulse)"
+                    stroke-width="3.5"
+                    stroke-linecap="round"
+                    class="swoosh-pulse-path-delayed"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <img src="public/images/collection.webp" 
+                 alt="Healthcare Uniforms and Linens Collection featuring scrubs, doctor coat, OT gowns, and medical bedding" 
+                 class="collection-img"
+                 width="1774"
+                 height="887"
+                 loading="eager"
+                 fetchpriority="high">
+          </div>
+
+          <!-- Mobile Badge with Transparent Rocket Icon positioned below collection image -->
+          <div class="launching-badge-mobile" role="status">
+            <svg class="burst left-burst" viewBox="0 0 24 24" fill="none" stroke="#d3151e" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="22" y1="12" x2="6" y2="12"></line>
+              <line x1="18" y1="18" x2="6" y2="6"></line>
+            </svg>
+            <img src="public/icons/rocket-clean.webp" alt="Rocket Icon" class="rocket-img-icon" width="22" height="22" aria-hidden="true">
+            <span class="badge-text">Launching Soon</span>
+            <svg class="burst right-burst" viewBox="0 0 24 24" fill="none" stroke="#d3151e" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+              <line x1="2" y1="12" x2="18" y2="12"></line>
+              <line x1="6" y1="18" x2="18" y2="6"></line>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- =======================================================================
+         PRODUCT CATEGORIES (Using Uploaded PNG Icons)
+         ======================================================================= -->
+    <section class="categories-section" aria-label="Product Categories">
+      <div class="categories-container">
+        
+        <!-- 1. Nurse & Hospital Uniforms -->
+        <div class="category-card" tabindex="0" role="button" aria-label="Nurse and Hospital Uniforms" data-category="Nurse & Hospital Uniforms">
+          <div class="category-icon-wrapper">
+            <img src="public/icons/Red Nurse Cap Medical Icon.webp" alt="Nurse Cap Icon" class="category-png-icon" width="52" height="52">
+          </div>
+          <span class="category-name">Nurse & Hospital<br>Uniforms</span>
+        </div>
+
+        <!-- 2. Medical Scrubs -->
+        <div class="category-card" tabindex="0" role="button" aria-label="Medical Scrubs" data-category="Medical Scrubs">
+          <div class="category-icon-wrapper">
+            <img src="public/icons/Red V-Neck Scrub Top Icon.webp" alt="Medical Scrubs Icon" class="category-png-icon" width="52" height="52">
+          </div>
+          <span class="category-name">Medical<br>Scrubs</span>
+        </div>
+
+        <!-- 3. OT & Surgical Linen -->
+        <div class="category-card" tabindex="0" role="button" aria-label="OT and Surgical Linen" data-category="OT & Surgical Linen">
+          <div class="category-icon-wrapper">
+            <img src="public/icons/Stacked Surgical Linens Icon.webp" alt="Surgical Linens Icon" class="category-png-icon" width="52" height="52">
+          </div>
+          <span class="category-name">OT &<br>Surgical Linen</span>
+        </div>
+
+        <!-- 4. Hospital Bedsheets -->
+        <div class="category-card" tabindex="0" role="button" aria-label="Hospital Bedsheets" data-category="Hospital Bedsheets">
+          <div class="category-icon-wrapper">
+            <img src="public/icons/Red Hospital Bed Icon.webp" alt="Hospital Bed Icon" class="category-png-icon" width="52" height="52">
+          </div>
+          <span class="category-name">Hospital<br>Bedsheets</span>
+        </div>
+
+        <!-- 5. Staff & Housekeeping Uniforms -->
+        <div class="category-card" tabindex="0" role="button" aria-label="Staff and Housekeeping Uniforms" data-category="Staff & Housekeeping Uniforms">
+          <div class="category-icon-wrapper">
+            <img src="public/icons/Red Uniform Shirt Icon.webp" alt="Staff Uniform Icon" class="category-png-icon" width="52" height="52">
+          </div>
+          <span class="category-name">Staff &<br>Housekeeping Uniforms</span>
+        </div>
+
+        <!-- 6. Disposables & Accessories -->
+        <div class="category-card" tabindex="0" role="button" aria-label="Disposables and Accessories" data-category="Disposables & Accessories">
+          <div class="category-icon-wrapper">
+            <img src="public/icons/Red Surgical Mask Icon.webp" alt="Surgical Mask Icon" class="category-png-icon" width="52" height="52">
+          </div>
+          <span class="category-name">Disposables &<br>Accessories</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SITE FOOTER
+         ======================================================================= -->
+    <footer class="site-footer" role="contentinfo">
+      <!-- Footer Content Body -->
+      <div class="footer-content-wrap">
+        <div class="footer-inner">
+          
+          <!-- "For bulk and business enquiries ->" Pill Button -->
+          <button type="button" class="enquiry-button" id="enquiryBtn" aria-haspopup="dialog" aria-expanded="false">
+            <span>For bulk and business enquiries</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </button>
+
+          <!-- Contact Details Group -->
+          <div class="footer-contact-group">
+            
+            <!-- Email -->
+            <div class="footer-contact-item">
+              <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <a href="mailto:vrhealthtrade@gmail.com" aria-label="Send email to vrhealthtrade@gmail.com">vrhealthtrade@gmail.com</a>
+            </div>
+
+            <div class="footer-divider-vert" aria-hidden="true"></div>
+
+            <!-- Phone Numbers -->
+            <div class="footer-contact-item">
+              <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>
+                <a href="tel:+918888184833" aria-label="Call +91 8888184833">+91 8888184833</a> 
+                &nbsp;|&nbsp; 
+                <a href="tel:+917385228848" aria-label="Call +91 7385228848">+91 7385228848</a>
+              </span>
+            </div>
+
+            <div class="footer-divider-vert" aria-hidden="true"></div>
+
+            <!-- Location -->
+            <div class="footer-contact-item">
+              <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Pune, Maharashtra, India</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- =======================================================================
+       BULK & BUSINESS ENQUIRY POPUP MODAL
+       ======================================================================= -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-window">
+      
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+
+      <div class="modal-header">
+        <span class="modal-badge">B2B & Institutional Orders</span>
+        <h2 class="modal-title" id="modalTitle">Direct Bulk Enquiry</h2>
+        <p class="modal-subtitle">Connect with Vinduraj Health Trade for wholesale pricing, custom uniform tailoring, and sample requests.</p>
+      </div>
+
+      <form class="enquiry-form" id="enquiryForm">
+        
+        <div class="form-group">
+          <label for="contactName" class="form-label">Full Name *</label>
+          <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Dr. Rajesh Sharma / Procurement Lead" required>
+        </div>
+
+        <div class="form-group">
+          <label for="hospitalName" class="form-label">Hospital / Clinic / Organization *</label>
+          <input type="text" id="hospitalName" name="hospital" class="form-input" placeholder="e.g. Apex Multispeciality Hospital, Pune" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label for="contactPhone" class="form-label">Phone Number *</label>
+            <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail" class="form-label">Email Address</label>
+            <input type="email" id="contactEmail" name="email" class="form-input" placeholder="procurement@hospital.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="productCategory" class="form-label">Interested Products</label>
+          <select id="productCategory" name="category" class="form-select">
+            <option value="All Categories">All Range / General Enquiry</option>
+            <option value="Nurse & Hospital Uniforms">Nurse & Hospital Uniforms</option>
+            <option value="Medical Scrubs">Medical Scrubs & Doctor Coats</option>
+            <option value="OT & Surgical Linen">OT Linen & Drapes</option>
+            <option value="Hospital Bedsheets">Hospital Bed Linens & Solapur Sheets</option>
+            <option value="Staff & Housekeeping Uniforms">Staff, Security & Housekeeping Uniforms</option>
+            <option value="Disposables & Accessories">Disposables (Caps, Masks, Shoe Covers, PPE)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiryMessage" class="form-label">Requirements / Estimated Quantity</label>
+          <textarea id="enquiryMessage" name="message" class="form-textarea" placeholder="Describe your quantity (e.g. 100 scrub sets, 200 bedsheets) or custom fabric/logo requirements..."></textarea>
+        </div>
+
+        <div class="modal-btn-row">
+          <button type="submit" class="btn-submit">Send Enquiry</button>
+          <a href="https://wa.me/918888184833?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20bulk%20healthcare%20uniforms%20and%20linens" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-whatsapp"
+             aria-label="Chat on WhatsApp">
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+      </form>
+
+      <!-- Success Screen -->
+      <div class="form-success-message" id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 8px;">Enquiry Received!</h3>
+        <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">
+          Thank you for reaching out to <strong>Vinduraj Health Trade</strong>. Our representative will contact you with product catalogs and custom bulk quotes within 24 hours.
+        </p>
+        <button type="button" class="btn-submit" id="successCloseBtn" style="width: auto; padding: 10px 24px;">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
